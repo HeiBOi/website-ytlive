@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ownDiv {
+    width: 98vw;
+    height: 95vh;
+    background-color: rgba(31,31,31,0.4);
+    border: 1px solid #313131;
+    backdrop-filter: blur(4px) brightness(70%) contrast(20%);
+    overflow: auto;
+}
+
+#sekcija1 {
+    backdrop-filter: blur(4px);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NAVIGATION BAR */
+nav {
+    display: flex;
+    height: 7%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+nav h1 {
+    color: #fff;
+    font-weight: 400;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    margin: 0 6px;
+}
+
+nav ul li a h1 {
+    color: #fff;
+    font-weight: 800;
+    transition: 0.41s;
+    font-size: 14px;
+}
+
+nav ul li a h1:hover {
+    color: #156adc;
+    font-size: 17px;
+}
+
+/* HOME SECTION */
+.homeSection {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 35px;
+}
+
+.homeSection h1 {
+    color: #fff;
+}
+
+.homeSection h4 {
+    color: rgba(255,255,255,0.5);
+}
+
+.homeSection img {
+    width: 200px;
+    margin-left: 25px;
+}
+
+.divInHS {
+    height: 35vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.divInHS2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 750px) {
+    .divInHS {
+        flex-direction: column;
+    }
+
+}
+
+/* SOCAIL CARDS DIV */
+.socialCards {
+    height: 50vh;
+}
+
+.socialCards h1 {
+    text-align: center;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.cardsSC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-direction: row;
+}
+
+.card {
+    width: 15vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+
+.ig {
+    background-image: url("https://lotofcolor.com/wp-content/uploads/2020/11/thumbnail-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fb {
+    background-color: #156adc;
+}
+
+.yt {
+    background-color: #fc1e1e;
+}
+
+.ld {
+    background-color: #1e8dfc;
+}
+
+.card img {
+    width: 50px;
+}
+
+.cardBackImg {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 1px rgba(1,1,1,0.6);
+    transform: perspective(1000px);
+    transform: translateZ(40px);
+}
+
+.card h2 {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    transform: perspective(1000px);
+    letter-spacing: 2px;
+    transform: translateZ(40px);
+}
+
+.card a {
+    color: #fff;
+    background-color: rgba(1,1,1,0.3);
+    width: 60%;
+    height: 5.2vh;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(40px);
+    transform: perspective(1000px);
+}
+
+@media (max-width: 750px) {
+    .cardsSC {
+        flex-direction: column;
+    }
+    .card {
+        width: 80vw;
+    }
+}
